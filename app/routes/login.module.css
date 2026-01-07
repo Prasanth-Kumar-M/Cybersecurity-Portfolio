@@ -1,0 +1,119 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-neutral-1) 0%, var(--color-neutral-2) 100%);
+  padding: var(--space-6);
+}
+
+.card {
+  background: var(--color-neutral-2);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-8);
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-7);
+}
+
+.title {
+  font: var(--font-heading);
+  color: var(--color-neutral-12);
+  margin: 0 0 var(--space-2);
+}
+
+.subtitle {
+  font: var(--font-body);
+  color: var(--color-neutral-10);
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font: var(--font-body);
+  color: var(--color-neutral-11);
+  font-weight: 500;
+}
+
+.input {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-neutral-3);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-2);
+  color: var(--color-neutral-12);
+  font: var(--font-body);
+  transition: all 0.2s var(--ease);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent-9);
+  box-shadow: 0 0 0 3px var(--color-accent-3);
+}
+
+.submitButton {
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-accent-9);
+  color: var(--color-accent-contrast);
+  border: none;
+  border-radius: var(--radius-2);
+  font: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+  margin-top: var(--space-3);
+}
+
+.submitButton:hover {
+  background: var(--color-accent-10);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 144, 255, 0.3);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-accent-11);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: var(--space-5);
+  justify-content: center;
+  transition: color 0.2s var(--ease);
+}
+
+.backLink:hover {
+  color: var(--color-accent-10);
+}
+
+.backIcon {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: var(--space-6);
+  }
+}
