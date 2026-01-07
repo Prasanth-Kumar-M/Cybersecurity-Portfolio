@@ -66,7 +66,7 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   name: "Prasanth Kumar Malleboina",
   title: "Purple Teamer | Blue & Red Team Hybrid | (ISC)² CC | Cloud Incident Response | Cybersecurity and Tech Blogger",
-  tagline: "Red Teaming | Cloud Security | Offensive Security",
+  tagline: "Cloud Security | Offensive Security",
   welcomeMessage:
     "Currently, I am delving into purple team strategies through the creation of cloud IR labs in AWS, simulating real-world attacks, and sharing my journey with a growing audience on Instagram. Always curious and learning — whether it's building custom AWS attack/defense scenarios, participating in CTF competitions, or developing security automation tools — I thrive at the intersection of technology, security, and education.",
   about:
